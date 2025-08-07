@@ -1,6 +1,7 @@
-body { 
-    background-color: #f0f8ff;
+/* aula 1 ----> body { 
+    background-color: #58a145;
     font-family: sans-serif;
+}
 
 h1 {
     color: #2c3e50;
@@ -9,12 +10,77 @@ h1 {
 }
 
 button {
-    background-color: #3498db; /* Um azul mais vivo */
-    color: white;
+    background-color: #3498db; /* Um azul mais vivo 
+    color: rgb(255, 255, 255);
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
 
+
+} */
+
+/* Aula 2 Flex box/: */
+
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f9;
 }
+
+h1 {
+
+    text-align: center;
+    color: #333
+}
+
+/*Estilo da nossa galeria*/
+.gallery-container {
+
+    background-color: #e0e0e0;
+    border: 2px solid #ccc;
+    padding: 10px;
+    /*A mágica acontece aqui:*/
+    display: flex;
+    /*justify-content: center;*/ /*Centraliza todos os itens*/
+    /*justify-content: space-between;*/ /*primeiro item na esquerda, último na direita, espaço igual no meio*/
+    justify-content: center; /* Espaço igual ao redor  de cada Item*/
+
+    /* Alinhamento no eixo secundário (vertical, por padrão) */
+  /* Para ver este efeito, dê uma altura para o container, ex: height: 200px; */
+  align-items: center /*Alinha os itens verticalmente no centro*/;
+  height: 200px;
+}
+
+.gallery-container2 {
+
+
+    background-color: #e0e0e0;
+    border: 2px solid #ccc;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+.gallery-container3 {
+
+
+    background-color: #e0e0e0;
+    border: 2px solid #ccc;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+
+}
+/*Estilo dos nossos livros*/
+.gallery-item {
+
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    margin:5px; /*Uma pequena margem para não ficarem colados*/
+    text-align: center;
 }
